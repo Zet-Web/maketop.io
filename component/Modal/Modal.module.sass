@@ -1,0 +1,319 @@
+.modal_container
+  background: rgba(35, 35, 54, 1)
+  max-width: 1000px
+  width: 100%
+  display: flex
+  border-radius: 9px
+  flex-direction: column
+  gap: 40px
+  color: #FFFFFF
+  padding: 60px 40px 60px 40px
+  align-items: center
+  height: max-content
+  @media (max-width: 1000px)
+    padding: 50px
+  @media (max-width: 800px)
+    padding: 40px
+  @media (max-width: 380px)
+    max-width: 380px
+    padding: 20px
+
+  .close
+    width: 15px
+    height: 15px
+    position: absolute
+    top: 35px
+    right: 40px
+    cursor: pointer
+  .backButton
+    position: absolute
+    top: 30px
+    left: 30px
+    color: rgba(15, 133, 255, 1)
+    cursor: pointer
+  .modal_title
+    display: flex
+    gap: 10px
+    flex-direction: row
+    padding: 0 10px
+    font-weight: 400
+    font-size: 28px
+    line-height: 33px
+    text-align: center
+    @media (max-width: 900px)
+      font-size: 24px
+    @media(max-width: 500px)
+      white-space: normal
+
+  .modal_stageBlock
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    max-width: 270px
+    width: 100%
+    margin: auto
+
+    img
+      max-width: 70%
+      width: 100%
+      @media (max-width: 800px)
+        width: 70%
+
+    .absoluteLine
+      position: absolute
+      z-index: 1
+      margin-left: 10px
+      width: 250px
+
+    .modal_stageItem
+      background: #33324B
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.79)
+      border-radius: 75px
+      border-color: black
+      color: rgba(190, 190, 190, 1)
+      max-width: 40px
+      width: 100%
+      height: 40px
+      display: flex
+      padding: 10px
+      align-items: center
+      justify-content: center
+      font-size: 18px
+      z-index: 2
+
+    .modal_stageItem_active
+      background: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%)
+      box-shadow: 0px 13px 33px rgba(76, 41, 255, 0.43)
+      border-radius: 75px
+      max-width: 40px
+      width: 100%
+      height: 40px
+      display: flex
+      padding: 10px
+      align-items: center
+      justify-content: center
+      font-size: 18px
+      z-index: 2
+
+  input
+    width: 100%
+    color: #FFFFFF
+    background: transparent
+    border: none
+    border-bottom: 2px solid rgba(249, 249, 249, 0.32)
+    padding: 10px 0 10px 0
+
+    &::placeholder
+      color: rgba(249, 249, 249, 0.32)
+
+  button
+    max-width: 228px
+    width: 100%
+    margin: auto
+  .buttonsRow
+    display: flex
+    gap: 20px
+    width: 100%
+    margin-bottom: 20px
+    @media (max-width: 400px)
+      flex-direction: column
+  .modal_account_block
+    border-radius: 5px
+
+    font-size: 16px
+    font-weight: 400
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 10px
+    color: white
+    min-height: 160px
+    max-height: 200px
+    //overflow-y: scroll
+    .modal_account_block_item
+      max-width: 600px
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      border-radius: 7px
+      background-color: #2b2a3b
+      padding: 20px
+
+      .account_icons
+        display: flex
+        align-items: center
+        gap: 10px
+        img
+          width: 70px
+          height: 70px
+          border-radius: 75px
+
+  .modal_account_block_circle
+    background: #232336
+    border: 1px solid #DBDBDB
+    box-sizing: border-box
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06)
+    border-radius: 75px
+    max-width: 30px
+    width: 100%
+
+    height: 30px
+    padding: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .posts_container
+    max-width: 1400px
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    align-items: center
+    grid-gap: 20px
+
+    .posts_item
+      width: 100px
+      height: 100px
+      border-radius: 9px
+    @media(max-width: 550px)
+      grid-template-columns: 1fr 1fr 1fr
+    @media(max-width: 400px)
+      grid-template-columns: 1fr 1fr
+
+    .chosenPost
+      color: #FFFFFF
+      width: 100%
+      font-size: 12px
+      background: rgba(50, 50, 50, 0.83)
+      border-radius: 9px 9px 0px 0px
+      display: flex
+      flex-direction: row
+      align-items: center
+      padding: 5px
+      justify-content: space-between
+
+      p
+        margin-bottom: 5px
+  .modalMore_block
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: black
+    gap: 10px
+    max-width: 105px
+    width: 100%
+    border-radius: 7px
+    padding: 10px
+    span
+      border-radius: 75px
+      width: 8px
+      height: 8px
+      background-color: rgba(15, 133, 255, 1)
+  .addition_block
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 10px
+    .modal_addition_item
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 20px
+      color: white
+      align-items: center
+      border: 1px solid rgba(255, 255, 255, 0.21)
+      border-radius: 7px
+      max-width: 500px
+      width: 100%
+      @media (max-width: 370px)
+        padding: 20px 5px 20px 5px
+
+  .payment_block
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 10px
+    .modal_payment_item
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 20px
+      color: white
+      align-items: center
+      border: 1px solid rgba(255, 255, 255, 0.21)
+      border-radius: 7px
+      max-width: 600px
+      width: 100%
+  .rowBlock
+    display: flex
+    flex-direction: row
+    gap: 20px
+    align-items: center
+
+.modal_account_block::-webkit-scrollbar
+  width: 12px
+/* width of the entire scrollbar */
+.modal_account_block::-webkit-scrollbar-track
+  border: 1px solid rgba(171, 129, 237, 0.13)
+  border-radius: 10px
+
+.modal_account_block::-webkit-scrollbar-thumb
+  background: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%)
+  /* color of the scroll thumb */
+  box-shadow: 0px 13px 33px rgba(76, 41, 255, 0.43)
+  border-radius: 20px
+
+.modal_container::-webkit-scrollbar
+  width: 12px
+/* width of the entire scrollbar */
+.modal_container::-webkit-scrollbar-track
+  border: 1px solid rgba(171, 129, 237, 0.13)
+  border-radius: 10px
+
+.modal_container::-webkit-scrollbar-thumb
+  background: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%)
+  /* color of the scroll thumb */
+  box-shadow: 0px 13px 33px rgba(76, 41, 255, 0.43)
+  border-radius: 20px
+
+#modal_progress
+  position: absolute
+  width: 90%
+  height: 4px
+  bottom: 0
+  left: 5%
+  background: transparent
+  border-radius: 75px
+  text-align: center
+  // @media screen and ( max-width: 1440px ) and (min-width: 1024px)
+  //   bottom: 0%
+  //   width: 90%
+  // @media screen and ( max-width:1023px  ) and (min-width: 768px)
+  //   width: 90%
+  // @media screen and ( max-width: 765px ) and (min-width: 420px)
+  //   width: 92%
+  // @media screen and ( max-width: 419px ) and(min-width: 375px)
+  //   width: 89%
+  // @media screen and ( max-width: 374px ) and(min-width: 320px)
+  //   width: 90%
+
+#modal_progress::-moz-progress-bar
+  background: white
+  transition: 1.5s ease
+#modal_progress::-webkit-progress-value
+  background: white
+  transition: 1.5s ease
+#modal_progress
+  color: white
+  transition: 1.5s ease
+
+.button_wrapper
+  max-width: 228px
+  width: 100%
+  position: relative
+  border-radius: 75px
+  overflow: hidden

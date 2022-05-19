@@ -1,0 +1,239 @@
+.container
+  width: 100%
+  max-width: 1400px
+  margin: 0 auto
+  padding: 32px 20px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-color: transparent
+  z-index: 5
+  a
+    display: block
+  img
+    cursor: pointer
+
+    z-index: 5
+  .link
+    color: white
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+    &:hover
+      border-bottom-width: 3px
+      border-bottom-style: solid
+
+    .hoverBlock
+      display: none
+      color: #FFFFFF
+      background: rgba(3, 16, 42, 0.65)
+      backdrop-filter: blur(15px)
+      border-radius: 14px
+    &:hover
+      .hoverBlock
+        display: flex
+        z-index: 4
+        position: absolute
+        margin: 0 auto
+        gap: 100px
+        right: 10px
+        max-width: 900px
+        padding: 40px 40px
+        width: 100%
+        flex-direction: row
+        a:hover
+          border-bottom-width: 3px
+          border-bottom-style: solid
+          border-image: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%) 1
+
+  .white
+    color: #FFFFFF!important
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+    z-index: 5
+    &:hover
+      border-bottom-width: 3px
+      border-bottom-style: solid
+      border-image: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%) 1
+
+  .menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    .burger_menu
+      display: none
+  @media (max-width: 1150px)
+    .container
+    .menu
+      justify-content: space-between
+      width: 100%
+      .burger_menu
+        z-index: 5
+        display: flex
+        justify-content: center
+        align-items: center
+        background: transparent
+        margin-top: 10px
+        cursor: pointer
+        border-radius: 10px
+        border: none
+        img
+          width: 100%
+          height: 100%
+
+    .white, .link
+      display: none
+  @media (max-width: 800px)
+    img
+      width: 70%
+      height: 70%
+.menu_open
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  padding: 210px 20px 27px
+  background: rgba(3, 16, 42, 0.65)
+  backdrop-filter: blur(15px)
+  transition: .3s linear
+  transform: translateY(-100%)
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  z-index: 3
+  .mobile_span
+    font-size: 14px
+    font-weight: 600
+    color: #FFFFFF
+    transition: .3s linear
+    cursor: pointer
+    &:hover
+      color: #5E0DFF
+  &.active
+      transform: translateY(0)
+      box-shadow: 0 4px 25px rgba(12, 0, 45, 0.8)
+  @media (max-width: 800px)
+      flex-direction: column
+      align-items: center
+      .mobile_span
+        font-size: 18px
+      gap: 13px
+  @media (max-width: 400px)
+    .mobile_span
+      font-size: 14px
+
+.accordion
+  border: none
+  background: transparent
+  color: white
+  display: flex
+  flex-direction: column
+  text-align: center
+  gap: 5px
+  a:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-image: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%) 1
+
+.instagram_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-image: linear-gradient(88.32deg, #009BFF -15.05%, #5E0DFF 108.12%) 1
+.youtube_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-image: linear-gradient(88.32deg, #FF007A -15.05%, #FF0D0D 108.12%) 1
+.tiktok_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-image: linear-gradient(88.32deg, #FF007A -15.05%, #FF0D0D 108.12%) 1
+.twitter_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-color: #02C6F8
+.facebook_link
+    color: white
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+    &:hover
+      border-bottom-width: 3px
+      border-bottom-style: solid
+      border-color: #176BE8
+.spotify_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-color: #54DE80
+.vk_link
+  color: white
+  font-size: 16px
+  font-weight: 400
+  cursor: pointer
+  &:hover
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-color: #7BA8CB
+.logoContainer
+  max-width: 300px
+  width: 100%
+  display: flex
+  position: relative
+  left: -100px
+  align-items: center
+  font-size: 36px
+  cursor: pointer
+  .make
+    color: transparent
+    font-weight: 700
+    -webkit-text-stroke: .03em white
+    margin-right: 10px
+    position: relative
+    left: -70px
+    font-size: 36px
+  .top
+    color: #0F85FF
+    font-weight: 700
+    font-size: 36px
+    position: relative
+    left: -70px
+  @media (max-width: 800px)
+    margin-left: 50px
+    .make
+      left: -50px
+    .top
+      left: -50px
+  @media (max-width: 400px)
+    .make
+      font-size: 30px
+      left: -40px
+    .top
+      font-size: 30px
+      left: -40px

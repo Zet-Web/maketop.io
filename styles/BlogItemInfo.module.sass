@@ -1,0 +1,130 @@
+.blogInfo_container
+  display: flex
+  align-items: flex-end
+  margin-top: 50px
+  max-width: 1400px
+  width: 100%
+  color: #FFFFFF
+  font-size: 18px
+  line-height: 30px
+  .blogInfo_video
+    display: flex
+    margin-bottom: 30px
+    align-items: center
+    justify-content: center
+    max-width: 660px
+    width: 100%
+    @media (max-width: 1000px)
+      max-width: 1000px
+      float: none !important
+      width: 100%
+      margin: 0 auto !important
+  img
+    margin-bottom: 30px
+  p
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 20px
+  @media (max-width: 900px)
+    font-size: 16px
+    img
+      float: none !important
+      width: 100%
+  @media (max-width: 400px)
+    font-size: 14px
+
+.textBlock
+  max-width: 1400px
+  width: 100%
+  color: #FFFFFF
+  margin: 30px auto 0
+  img
+    margin-top: 20px
+    max-width: 1400px
+    width: 100%
+  .textBlock_title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 20px
+  .textBlock_text
+    font-size: 18px
+  @media (max-width: 900px)
+    .textBlock_text
+      font-size: 16px
+  @media (max-width: 400px)
+    .textBlock_text
+      font-size: 14px
+
+.blogList
+  max-width: 1400px
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  color: #FFFFFF
+  gap: 50px
+  margin: 40px auto 0
+  img
+    float: left
+    height: 450px
+    margin-right: 40px
+    margin-bottom: 20px
+  .blogList_item
+    display: flex
+    flex-direction: row
+    gap: 40px
+    .blogList_title
+      font-weight: 700
+      font-size: 24px
+      margin-bottom: 10px
+    .blogList_text
+      font-weight: 400
+      font-size: 18px
+      line-height: 24px
+  @media (max-width: 1060px)
+    grid-template-columns: 1fr
+  @media (max-width: 900px)
+    .blogList_item
+      .blogList_title
+        font-size: 22px
+  @media (max-width: 500px)
+    .blogList_item
+      font-size: 16px
+      img
+        float: none !important
+        width: 100%
+        height: 100%
+        margin: 0 auto !important
+      .blogList_title
+        font-size: 20px
+
+
+
+.blogVideoList
+  max-width: 1400px
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr
+  color: #FFFFFF
+  gap: 50px
+  margin: 40px auto 0
+  .blogVideo_video
+    max-width: 600px
+    width: 100%
+    margin-bottom: 20px
+  .blogVideo_item
+    display: flex
+    gap: 40px
+    .blogVideo_title
+      font-weight: 700
+      font-size: 24px
+      margin-bottom: 10px
+  @media(max-width: 900px)
+    .blogVideo_video
+      margin-right: 0 !important
+      margin-left: 0 !important
+      float: none !important
+      max-width: 900px
+      max-height: 350px
+      width: 100%
+      height: 100%
+

@@ -1,0 +1,75 @@
+.questions
+  max-width: 1400px
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 20px
+  text-align: center
+  align-items: center
+  justify-content: center
+  padding: 0 40px 100px
+  margin: 100px auto 0
+  color: #FFFFFF
+
+  .questions_title
+    color: white
+    font-weight: 600
+    font-size: 42px
+  .questions_text
+    color: white
+    font-size: 16px
+    text-align: center
+  @media (max-width: 900px)
+    margin: 60px auto 0
+    .questions_title
+      font-size: 36px
+    .questions_text
+      font-size: 16px
+
+
+
+.question_container
+  max-width: 1400px
+  width: 100%
+  margin: 0 auto
+  padding: 70px 0
+  display: flex
+  flex-direction: row
+  gap: 20px
+  align-items: flex-start
+
+  .question_div
+    max-width: 660px
+    width: 100%
+    color: #FFFFFF
+    background: linear-gradient(95.71deg, rgba(227, 227, 248, 0.26) 23.99%, rgba(237, 224, 252, 0.18) 80.43%)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 10px
+    border-radius: 75px
+    .question_div_question
+       font-size: 18px
+       font-weight: 700
+    .question_p_answer
+      font-size: 18px !important
+      @media (max-width: 800px)
+        font-size: 14px !important
+  @media (max-width: 1000px)
+    flex-direction: column
+    align-items: center
+    gap: 0
+  @media (max-width: 850px)
+    padding: 40px 0 70px
+  @media (max-width: 600px)
+    .question_div
+      .question_div_question
+        font-size: 16px
+      .question_p_answer
+          font-size: 14px
+  @media (max-width: 400px)
+    .question_div
+      .question_div_question
+        font-size: 12px
+      .question_p_answer
+        font-size: 8px

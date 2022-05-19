@@ -1,0 +1,73 @@
+.support_container
+  max-width: 1400px
+  width: 100%
+  display: flex
+  color: #FFFFFF
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  .support_title
+    text-align: center
+    font-weight: 700
+    font-size: 48px
+    line-height: 57px
+    text-transform: uppercase
+    margin-bottom: 40px
+  .support_text
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    display: flex
+    flex-direction: column
+    gap: 50px
+    .textTitle
+      color: rgba(52, 77, 255, 1)
+      font-size: 24px
+      font-weight: 600
+      margin-bottom: 15px
+  @media (max-width: 600px)
+    .support_title
+      font-size: 36px
+    .support_text
+      font-size: 14px
+      .textTitle
+        font-size: 20px
+
+  .supportForm
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr
+    gap: 50px
+    color: #FFFFFF
+    p
+      margin-bottom: 20px
+    .firstFormRow
+      display: grid
+      grid-template-columns: 1fr 1fr
+      gap: 20px
+      @media (max-width: 600px)
+        grid-template-columns: 1fr
+  textarea
+    width: 100%
+    color: #FFFFFF
+    background: transparent
+    border: none
+    border-bottom: 2px solid rgba(249, 249, 249, 0.32)
+    padding: 10px 0 10px 0
+    &::placeholder
+      color: rgba(249, 249, 249, 0.32)
+  input
+    width: 100%
+    color: #FFFFFF
+    background: transparent
+    border: none
+    border-bottom: 2px solid rgba(249, 249, 249, 0.32)
+    padding: 10px 0 10px 0
+    &::placeholder
+      color: rgba(249, 249, 249, 0.32)
+  button
+    margin-top: 50px
+    margin-bottom: 30px
+    max-width: 228px
+    width: 100%
+

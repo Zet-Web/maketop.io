@@ -1,0 +1,51 @@
+.alertContainer
+  max-width: 1400px
+  width: 100%
+  color: #FFFFFF
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 70px
+  .alertTitle
+    font-size: 48px
+    font-weight: 700
+    line-height: 57px
+  .alertBody
+    max-width: 570px
+    width: 100%
+    text-align: center
+    display: flex
+    flex-direction: column
+    gap: 40px
+    border: 1px solid rgba(255, 255, 255, 0.4)
+    border-radius: 9px
+    padding: 50px 40px 50px 40px
+    .alertBody_title
+      font-weight: 700
+      font-size: 24px
+      line-height: 35px
+      text-transform: uppercase
+    .alertButtons
+      display: flex
+      flex-direction: row
+      gap: 30px
+      button
+        max-width: 228px
+        width: 100%
+    @media(max-width: 600px)
+      .alertBody_title
+        font-size: 22px
+      .alertButtons
+        button
+          font-size: 14px
+    @media(max-width: 600px)
+      font-size: 14px
+      .alertButtons
+        flex-direction: column
+        align-items: center
+.enjoyTitle
+  color: rgba(52, 77, 255, 1)
+  font-weight: 700
+  font-size: 64px
+  line-height: 77px
